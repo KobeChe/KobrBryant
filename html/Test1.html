@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+      function  setup() {
+          var output=document.getElementById("output");
+
+          var ws=new WebSocket("ws://echo.websocket.org/echo");
+          function log(s) {
+              var p=document.createElement("p");
+              p.textContent=s;
+              p.style.wordWrap="break-woed";
+
+          }
+          ws.onopen=function () {
+
+          }
+
+      }
+
+
+
+
+    </script>
+</head>
+<body>
+<div id="output">
+
+
+</div>
+
+</body>
+</html>
